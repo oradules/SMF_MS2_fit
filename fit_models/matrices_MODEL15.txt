@@ -1,0 +1,11 @@
+Q= 
+ matrix([[-k1, k2, 0, 0]]) 
+ matrix([[k1, - k2 - k3, k4, k9]]) 
+ matrix([[0, k3, - k4 - k5, k6]]) 
+ matrix([[0, 0, k5, - k6 - k9 - k10]]) 
+ Qp= 
+ matrix([[-k1, k2, 0, 0]]) 
+ matrix([[k1, - k2 - k3, k4, k9]]) 
+ matrix([[0, k3, - k4 - k5, k6 + k10]]) 
+ matrix([[0, 0, k5, - k6 - k9 - k10]]) 
+ 

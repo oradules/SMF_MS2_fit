@@ -1,0 +1,25 @@
+function [p1no,p2no,p3no,p4no,p1hi,p2hi,p3hi,p4hi]=proba4MODEL12(k); 
+ k1=k(15); 
+ k2=k(16); 
+ k3=k(17); 
+ k4=k(18); 
+ k5=k(19); 
+ k9no=k(20); 
+ k10no=k(21); 
+ k11no=k(22); 
+ k12no=k(23); 
+ k9hi=k(24); 
+ k10hi=k(25); 
+ k11hi=k(26); 
+ k12hi=k(27); 
+ pt=k1*k3*k5 + k1*k3*k9no + k1*k3*k10no + k1*k4*k9no + k1*k3*k11no + k1*k4*k10no + k2*k4*k9no + k1*k3*k12no + k1*k4*k11no + k2*k4*k10no + k1*k4*k12no + k1*k5*k11no + k2*k4*k11no + k1*k5*k12no + k2*k4*k12no + k2*k5*k11no + k2*k5*k12no + k3*k5*k12no; 
+ p1no= (k2*k4*k9no + k2*k4*k10no + k2*k4*k11no + k2*k4*k12no + k2*k5*k11no + k2*k5*k12no + k3*k5*k12no)/pt; 
+ p2no= (k1*(k4*k9no + k4*k10no + k4*k11no + k4*k12no + k5*k11no + k5*k12no))/pt; 
+ p3no= (k1*k3*(k9no + k10no + k11no + k12no))/pt; 
+ p4no= (k1*k3*k5)/pt; 
+ pt=k1*k3*k5 + k1*k3*k9hi + k1*k3*k10hi + k1*k4*k9hi + k1*k3*k11hi + k1*k4*k10hi + k2*k4*k9hi + k1*k3*k12hi + k1*k4*k11hi + k2*k4*k10hi + k1*k4*k12hi + k1*k5*k11hi + k2*k4*k11hi + k1*k5*k12hi + k2*k4*k12hi + k2*k5*k11hi + k2*k5*k12hi + k3*k5*k12hi; 
+ p1hi= (k2*k4*k9hi + k2*k4*k10hi + k2*k4*k11hi + k2*k4*k12hi + k2*k5*k11hi + k2*k5*k12hi + k3*k5*k12hi)/pt; 
+ p2hi= (k1*(k4*k9hi + k4*k10hi + k4*k11hi + k4*k12hi + k5*k11hi + k5*k12hi))/pt; 
+ p3hi= (k1*k3*(k9hi + k10hi + k11hi + k12hi))/pt; 
+ p4hi= (k1*k3*k5)/pt; 
+ 

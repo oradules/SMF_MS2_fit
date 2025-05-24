@@ -1,0 +1,25 @@
+function [p1no,p2no,p3no,p4no,p5no,p1hi,p2hi,p3hi,p4hi,p5hi]=proba5MODEL8(k); 
+ k1=k(19); 
+ k2=k(20); 
+ k3=k(21); 
+ k4=k(22); 
+ k5=k(23); 
+ k6no=k(24); 
+ k9no=k(25); 
+ k10no=k(26); 
+ k6hi=k(27); 
+ k9hi=k(28); 
+ k10hi=k(29); 
+ pt=k1*k3*k5*k6no + k1*k3*k5*k9no + k1*k3*k6no*k9no + k1*k4*k6no*k9no + k2*k4*k6no*k9no + k1*k3*k9no*k10no + k1*k4*k9no*k10no + k2*k4*k9no*k10no; 
+ p1no= (k2*k4*k9no*(k6no + k10no))/pt; 
+ p2no= (k1*k4*k9no*(k6no + k10no))/pt; 
+ p3no= (k1*k3*k9no*(k6no + k10no))/pt; 
+ p4no= (k1*k3*k5*k6no)/pt; 
+ p5no= (k1*k3*k5*k9no)/pt; 
+ pt=k1*k3*k5*k6hi + k1*k3*k5*k9hi + k1*k3*k6hi*k9hi + k1*k4*k6hi*k9hi + k2*k4*k6hi*k9hi + k1*k3*k9hi*k10hi + k1*k4*k9hi*k10hi + k2*k4*k9hi*k10hi; 
+ p1hi= (k2*k4*k9hi*(k6hi + k10hi))/pt; 
+ p2hi= (k1*k4*k9hi*(k6hi + k10hi))/pt; 
+ p3hi= (k1*k3*k9hi*(k6hi + k10hi))/pt; 
+ p4hi= (k1*k3*k5*k6hi)/pt; 
+ p5hi= (k1*k3*k5*k9hi)/pt; 
+ 

@@ -1,0 +1,3 @@
+p5no= (M.k1(1)*M.k3(1)*M.k5(1)*M.k7no(1))/(M.k1(1)*M.k3(1)*M.k5(1)*M.k6no(1) + M.k1(1)*M.k3(1)*M.k5(1)*M.k7no(1) + M.k1(1)*M.k3(1)*M.k7no(1)*M.k8no(1) + M.k1(1)*M.k4(1)*M.k7no(1)*M.k8no(1) + M.k2(1)*M.k4(1)*M.k7no(1)*M.k8no(1)); 
+ p5hi= (M.k1(1)*M.k3(1)*M.k5(1)*M.k7hi(1))/(M.k1(1)*M.k3(1)*M.k5(1)*M.k6hi(1) + M.k1(1)*M.k3(1)*M.k5(1)*M.k7hi(1) + M.k1(1)*M.k3(1)*M.k7hi(1)*M.k8hi(1) + M.k1(1)*M.k4(1)*M.k7hi(1)*M.k8hi(1) + M.k2(1)*M.k4(1)*M.k7hi(1)*M.k8hi(1)); 
+ 
