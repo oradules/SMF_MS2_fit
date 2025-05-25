@@ -26,33 +26,33 @@
 ## List of models (the models with * were used in the paper, with a different label)
 Model1.  5 states, branched, no k8
 
-Model17. 5 states, branched
+Model17*(named Model2 in the paper). 5 states, branched
 
 Model14. 5 states, cyclic, all transitions
 
-Model 2. 5 states, cyclic, k9 from state 4 to state 2
+Model 2*(named Model4 in the paper). 5 states, cyclic, k9 from state 4 to state 2
 
-Model 3. 5 states, cyclic, k9 from state 4 to state 1
+Model 3*(named Model5 in the paper). 5 states, cyclic, k9 from state 4 to state 1
 
-Model 13. 5 states, cyclic, k9 from state 4 to state 3
+Model 13*(named Model3 in the paper). 5 states, cyclic, k9 from state 4 to state 3
 
-Model 4. 5 states, cyclic, k9 from state 4 to state 2, no k7
+Model 4*(named Model7 in the paper). 5 states, cyclic, k9 from state 4 to state 2, no k7
 
-Model 5. 5 states, cyclic, k9 from state 4 to state 1, no k7
+Model 5*(named Model8 in the paper). 5 states, cyclic, k9 from state 4 to state 1, no k7
 
-Model 18. 5 states, cyclic, k9 from state 4 to state 3, no k7
+Model 18*(named Model6 in the paper). 5 states, cyclic, k9 from state 4 to state 3, no k7
 
-Model 6. 5 states, cyclic, k9 from state 4 to state 2, no k7, no k8
+Model 6*(named Model10 in the paper). 5 states, cyclic, k9 from state 4 to state 2, no k7, no k8
 
-Model 7. 5 states, cyclic, k9 from state 4 to state 1, no k7, no k8
+Model 7*(named Model11 in the paper). 5 states, cyclic, k9 from state 4 to state 1, no k7, no k8
 
-Model 8. 5 states, cyclic, k9 from state 4 to state 3, no k7, no k8
+Model 8*(named Model9 in the paper). 5 states, cyclic, k9 from state 4 to state 3, no k7, no k8
 
 Model 9. 4 states, cyclic, k9 from state 4 to state 2, no k7, no k6
 
 Model 10. 4 states, cyclic, k9 from state 4 to state 1, no k7, no k6
 
-Model 11. 4 states, chain
+Model 11*(named Model1 in the paper). 4 states, chain
 
 Model 12. 4 states, cyclic, k9 from state 4 to state 1, k11 from state 4 to state 2, k12 from state 4 to state 1
 
