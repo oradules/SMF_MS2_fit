@@ -1,14 +1,29 @@
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%% Code written by Ovidiu Radulescu, University of Montpellier, June 2019
-%%%%% reads results of genetic algorithm for short movies, data from long
-%%%%% movies
-%%%%% needs 1) short movies decomvolution results  result_tat_name_short.mat
-%%%%% 2) long movie data name_long.mat or long movie data name_long_raw.mat
-%%%%% performs unconstrained two exponentials fit, compute parameters of
-%%%%% the two states model %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% Code written by Ovidiu Radulescu, University of Montpellier, August
+%%%%% 2024 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% reads MS2 data computes survival functions %%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%% needs data from mat files %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%result_tat_clean_OMX_42_H128_PST_WTc2cPosPred10.mat
+%result_tat_clean_OMX_44_H128_PST_WTc2cPosPred10.mat
+%result_tat_clean_OMX_48_WT_calib_RA_IntIntcPosPred10.mat
+%result_tat_clean_OMX_60_WT_calib_RA_IntIntcPosPred10.mat
+%result_tat_clean_OMX_77_noTatcPosPred10.mat
+%result_tat_clean_OMX_80_noTatcPosPred10.mat
+%data_tat_WT_long_raw.mat'
+%data_tat_no_tat_long_raw.mat'
+
+
+
 %%%%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 clear all
 close all
+
+
+
+
 global alpha xs xl ss sl;
 alpha = 0.6; %%% relative importance linear
 thresh=1200; %%% threshold long movie    
@@ -28,21 +43,7 @@ TaillePostMarq = 1600+100*Polym_speed; % 1600 bases (ref publi)
 FreqEchImg = (1/3); % 1/3 image per second data time sampling
 Intensity_for_1_Polym = 1; %%%% 
 DureeSignal = (TaillePreMarq + TailleSeqMarq + TaillePostMarq) / Polym_speed; % signal length in seconds
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%% Code written by Ovidiu Radulescu, University of Montpellier, August
-%%%%% 2024 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%% reads MS2 data computes survival functions %%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%% needs data from mat files %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%result_tat_clean_OMX_42_H128_PST_WTc2cPosPred10.mat
-%result_tat_clean_OMX_44_H128_PST_WTc2cPosPred10.mat
-%result_tat_clean_OMX_48_WT_calib_RA_IntIntcPosPred10.mat
-%result_tat_clean_OMX_60_WT_calib_RA_IntIntcPosPred10.mat
-%result_tat_clean_OMX_77_noTatcPosPred10.mat
-%result_tat_clean_OMX_80_noTatcPosPred10.mat
-%data_tat_WT_long_raw.mat'
-%data_tat_no_tat_long_raw.mat'
 
 
 for iname=1:2
