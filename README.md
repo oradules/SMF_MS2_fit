@@ -4,7 +4,7 @@
 
 - directory generate_models contains the code to generate objective functions needed for inference
 
-    - To generatate objective functions needed for 5 states models run in Matlab inverse_problem_symbolic5onemoviekini_mergep4p5ponkinishort.m
+    - To generate objective functions needed for 5 states models run in Matlab inverse_problem_symbolic5onemoviekini_mergep4p5ponkinishort.m
     - The output files resulting from this should be moved to fit_models directory (this is already done)
     - To generatate objective functions needed for 4 states models launch in Matlab inverse_problem_symbolic4onemovieponkini.m
     - The output files should be moved to fit_models directory (this is already done)
