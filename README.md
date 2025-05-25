@@ -22,7 +22,7 @@
           fit_4expMODEL911_merge_onemovieponkini.m
           fit_4expMODEL12_merge_onemovieponkini.m
   - To read results and generate figures launch in Matlab read_distribution_parsmerge_onemoviekini_mergep4p5ponkinishort.m
- 
+ The results are written in the directory results_mergekinimergep4p5ponkiniallshort45 (already done)
 ## List of models (the models with * were used in the paper, with a different label)
 Model1.  5 states, branched, no k8
 
