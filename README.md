@@ -1,4 +1,4 @@
-# Code used to infer finite state Markov processes models for transcription using MS2 and SMF data
+# Code used to infer finite state Markov process models for transcription using MS2 and SMF data
 
 ## Content
 
